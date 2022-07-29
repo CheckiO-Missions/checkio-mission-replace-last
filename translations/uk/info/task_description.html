@@ -1,0 +1,29 @@
+<!-- Describe task in general -->
+
+<p>
+    В даному {% if interpreter.slug == "js-node" %}масиві{% else %}списку{% endif %} останній елемент повинен стати першим. Порожній {% if interpreter.slug == "js-node" %}масив{% else %}список{% endif %} або {% if interpreter.slug == "js-node" %}масив{% else %}список{% endif %} із одного елемента не повинен змінюватися.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>Вхідні дані: </strong> {% if interpreter.slug == "js-node" %}Масив{% else %}Список{% endif %}.
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> {% if interpreter.slug == "js-node" %}Масив{% else %}Набір елементів{% endif %}.
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Приклад:</strong>
+    </p>
+
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
