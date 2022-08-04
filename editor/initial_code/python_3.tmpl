@@ -1,15 +1,15 @@
 {% comment %}New initial code template{% endcomment %}
-{% block env %}{% endblock env %}
+{% block env %}from typing import Iterable{% endblock env %}
 
 {% block start %}
-def replace_last(line: list) -> list:
+def replace_last(line: list) -> Iterable:
     # your code here
     return None
 {% endblock start %}
 
 {% block example %}
 print('Example:')
-print(replace_last([2, 3, 4, 1]))
+print(list(replace_last([2, 3, 4, 1])))
 {% endblock %}
 
 {% block tests %}
