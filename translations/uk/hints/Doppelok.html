@@ -40,7 +40,7 @@ print(a) # output: [2,1,3]
     <div class="answer">
         <p>Твій код повинен мати наступний вигляд. А також, не забудь про перевірку на те, чи порожній список.</p>
         <pre class="brush: python">
-def replace_last(items: list) -> list:
+def replace_last(items: list) -> Iterable:
     if items:
         items.insert(0, items.pop(-1))
     return items
