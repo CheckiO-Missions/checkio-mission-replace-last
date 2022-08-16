@@ -14,7 +14,7 @@ print(list(replace_last([2, 3, 4, 1])))
 
 {% block tests %}
 {% for t in tests %}
-assert {% block call %}replace_last({{t.input|p_args}})
+assert {% block call %}list(replace_last({{t.input|p_args}}))
 {% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
 {% endblock %}
 
