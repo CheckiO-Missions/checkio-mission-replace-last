@@ -1,0 +1,28 @@
+<!-- Describe task in general -->
+
+<p>
+    В заданном {% if interpreter.slug == "js-node" %}массиве{% else %}списке{% endif %} последний элемент должен стать первым. Пустой {% if interpreter.slug == "js-node" %}массив{% else %}список{% endif %} или {% if interpreter.slug == "js-node" %}массив{% else %}список{% endif %} с одним элементом должен оставаться неизменным
+</p>
+   
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+    <strong>Вх. данные: </strong> {% if interpreter.slug == "js-node" %}Массив{% else %}Список{% endif %}.
+</p>
+
+<p>
+    <strong>Вых. данные: </strong> {% if interpreter.slug == "js-node" %}Массив{% else %}Итерируемый объект (кортеж, генератор, итератор ...){% endif %}.
+</p>
+
+
+<!-- Give some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Пример:</strong>
+    </p>
+
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
