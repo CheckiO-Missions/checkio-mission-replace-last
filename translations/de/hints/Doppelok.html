@@ -1,0 +1,52 @@
+<body data-author="Doppelok">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Mission beginnen soll
+    </div>
+    <div class="answer">
+        Lesen Sie zunächst etwas Material über die Methoden "list.pop()" und "list.insert()" <a href="https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range" target="_blank">.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche noch etwas Hilfe, um mit der Mission fortzufahren
+    </div>
+    <div class="answer">
+        Also, die Methode "list.pop()" entfernt das Element an der angegebenen Position, die Sie in Klammern "()" angeben. Wenn Sie in Ihrer Python-Konsole "a = [1, 2, 3]" eingeben und dann "a.pop(1)" verwenden, erhalten Sie "[1, 3]".
+       <pre class="brush: python">
+a = [1,2,3]
+a.pop(1)
+print(a) # output: [1, 3]
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich bin schon halb durch. Ich brauche Hilfe!
+    </div>
+    <div class="answer">
+        Die Methode "list.insert()" fügt den angegebenen Wert an der angegebenen Position ein. Wenn Sie also in Ihrer Python-Konsole "list.insert(0, 2)" eingeben, erhalten Sie "[2, 1, 3]".
+       <pre class="brush: python">
+a = [1,3]
+a.insert(0, 2)
+print(a) # output: [2,1,3]
+        </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Eine letzte Frage. Wie wird meine endgültige Lösung aussehen?
+    </div>
+    <div class="answer">
+        <p>Ihr Code sollte wie folgt aussehen. Und vergessen Sie nicht zu prüfen, ob die Liste leer ist.</p>
+        <pre class="brush: python">
+def replace_last(items: list) -> Iterable:
+    if items:
+        items.insert(0, items.pop(-1))
+    return items
+        </pre>
+    </div>
+</div>
+
+
+</body>
